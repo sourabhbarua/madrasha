@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Elias';
+    src: url(fonts/FL\ Elias\ Pushpa\ Borno-2\ Regular.ttf);
+  }
+
+  @font-face {
+    font-family: 'Projapoti';
+    src: url(fonts/F\ Projapoti\ Unicode.ttf);
+  }
+
+
+body {
+    font-family: "Tiro Bangla", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top{
+    background-color: #0F8180;
+    color: #FFFFFF;
+    display: flex;
+    gap: 24px;
+    padding: 14px 0;
+    justify-content: center;
+    width: 100%;
+}
+.top .info{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.top a{
+    font-family: "inter";
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.top span{
+    font-size: 20px;
+}
+.top .location a{
+    font-family: "Tiro Bangla", serif;
+}
+
+.top .info p, .top .location a{
+    padding-top: 4px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 1200px;
+}
+
+.nav .menu ul li {
+    display: inline-block;
+    padding-left: 24px;
+
+}
+.nav .menu ul li a {
+    text-decoration: none;
+    color: #000000;    
+}
+
+.nav .menu{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+button{
+    height: 44px;
+    font-family: "Tiro Bangla", serif;
+    font-size: 16px;
+    padding: 0 16px;
+    border-radius: 12px;
+    border: none;
+}
+.buttons .default{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #FFFFFF;
+    border: #DCDFE3;
+    border-width: 2px;
+    border-style: solid;
+
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.buttons .active{
+    background-color: #0F8180;
+    color: #FFFFFF;
+}
+
+.banner{
+    background-image: url(banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+}
+.banner .content .text{
+    width: 618px;
+}
+.banner .content .text h3{
+    font-size: 40px;
+    font-family: 'Elias', Courier, monospace;
+}
+.banner .content .text h1{
+    font-size: 56px;
+    font-family: 'Projapoti';
+    background: linear-gradient(180deg, #F8BD27 0%, #F37010 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner .content .text p{
+    font-size: 18px;
+}
